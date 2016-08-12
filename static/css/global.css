@@ -1,0 +1,10 @@
+#cloud{
+    width: 50vw;
+    height: 40vh;
+    margin-top: 10vh;
+    margin-left: 25vw;
+}
+
+#slider { position: relative; overflow: auto; }
+#slider li { list-style: none; }
+#slider ul li { float: left; }

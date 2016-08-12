@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/css/bootstrap-theme.min.css">
+        <script src="/static/js/jquery-3.1.0.min.js"></script>
+        <script src="/static/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="/static/css/jqcloud.min.css">
+        <script src="/static/js/jqcloud.js"></script>
+        <link rel="stylesheet" href="/static/css/global.css">
+        <link rel="stylesheet" href="/static/css/tooltipster.bundle.min.css">
+        <script src="/static/js/tooltipster.bundle.min.js"></script>
+        <script src="/static/js/unslider.min.js"></script>
+        <title>{{title}}</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">❤</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">首页</a></li>
+                        <li><a href="/resume">个人简历</a></li>
+                        <li class="active"><a href="/introduction">自我介绍</a></li>
+                        <li><a href="projects">作品展示</a></li>
+                    </ul>       
+                </div>
+            </div>
+        </nav>
+
+        <div class="jumbotron">
+            <div id="slider">
+                <ul>
+                    <li>
+                        <div id="cloud"></div>
+                    </li>
+                    <li>
+                        <div id="intro1" style="width: 800px; height: 600px">Hello</div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <hr>
+
+        <footer>
+            <p>&copy; 2016</p>
+        </footer>
+
+        <script>
+            var showToolTip = function(){
+                $('.tooltip2').tooltipster({
+                    theme: 'tooltipster-noir'
+                });
+            };
+            var words = [
+                {text: "程序猿", title: "4岁野生程序猿", weight: 13, afterWordRender: showToolTip},
+                {text: "女汉纸", title: "但手无抓鸡之力",weight: 10.5, afterWordRender: showToolTip},
+                {text: "不吃肉会死星人", title: "火锅能吃两斤肉", weight: 9.4, afterWordRender: showToolTip},
+                {text: "吃货", title: "除了吃喝其它都是小事", weight: 8.5, afterWordRender: showToolTip},
+                {text: "颜控", title: "脸盲晚期", weight: 8, afterWordRender: showToolTip},
+                {text: "人肉GPS", title: "第一次出国一个人带着纸质地图没有迷路！", weight: 7.5, afterWordRender: showToolTip},
+                {text: "仓鼠病", title: "爱收集小物胶带贴纸水彩颜料", weight: 7, afterWordRender: showToolTip},
+                {text: "平地摔", title: "皮厚肉糙", weight: 6.6, afterWordRender: showToolTip},
+                {text: "毛绒玩具中毒ing", title: "最近喜欢兔兔", weight: 6.2, afterWordRender: showToolTip},
+                {text: "蹭得累", title: "大写的傲娇", weight: 5.5, afterWordRender: showToolTip},
+                {text: "伪文艺青年", title: "像我这么不清新脱俗的", weight: 5,afterWordRender: showToolTip},
+            ];
+            $('#cloud').jQCloud(words);
+            $('.tooltip2').tooltipster({
+                theme: 'tooltipster-noir'
+            });
+            $("#slider").unslider();
+        </script>
+    </body>
+</html>
